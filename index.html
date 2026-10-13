@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind Landing Page</title>
+  </head>
+  <body class="bg-gray-100 min-h-screen p-6">
+    
+    <main class="max-w-md mx-auto bg-white rounded-xl shadow-md p-6 space-y-4">
+      <h2 class="text-xl font-bold text-gray-800">User Profile & Form 📝</h2>
+      
+      <!-- API Profile Button & Card -->
+      <button id="load-btn" class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700">
+        Load Profile 👤
+      </button>
+
+      <div id="profile-card" class="p-3 bg-gray-50 rounded-lg text-sm text-gray-700">
+        <p id="user-name">Name: ---</p>
+        <p id="user-email">Email: ---</p>
+      </div>
+
+      <!-- Live Validation Form -->
+      <form id="contact-form" class="space-y-3">
+        <input type="text" id="username" placeholder="Enter name" class="w-full p-2 border rounded-lg">
+        <span id="error-msg" class="text-red-500 text-xs block"></span>
+        <button type="submit" class="w-full bg-green-600 text-white py-2 rounded-lg">Submit</button>
+      </form>
+    </main>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
